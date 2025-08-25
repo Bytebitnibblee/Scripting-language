@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sum Button Example</title>
+</head>
+<body>
+  <h2>Click the Button to Add 10</h2>
+
+  <p id="result">0</p>
+
+  <button onclick="addTen()">Sum Button</button>
+
+  <script>
+    
+    let total = 0;
+
+    function addTen() {
+      total += 10; 
+      document.getElementById("result").innerHTML = total; 
+    }
+  </script>
+</body>
+</html>

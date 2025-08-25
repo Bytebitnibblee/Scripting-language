@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String to Lowercase</title>
+</head>
+<body>
+  <h2>Convert String to Lowercase</h2>
+
+  <p id="text">HELLO JAVASCRIPT!</p>
+
+  <button onclick="toLowercase()">Convert to Lowercase</button>
+
+  <script>
+    function toLowercase() {
+      let str = document.getElementById("text").innerHTML;
+      document.getElementById("text").innerHTML = str.toLowerCase();
+    }
+  </script>
+</body>
+</html>

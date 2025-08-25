@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Say Hello After 3 Seconds</title>
+</head>
+<body>
+  <h2>Click the Button to Say Hello After 3 Seconds</h2>
+
+  <button onclick="sayHello()">Click Me</button>
+
+  <script>
+    function sayHello() {
+      setTimeout(function() {
+        alert("Hello!");
+      }, 3000); 
+    }
+  </script>
+</body>
+</html>

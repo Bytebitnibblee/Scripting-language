@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculate Y</title>
+</head>
+<body>
+  <h2>Calculate y = x + 1</h2>
+
+  <p id="result">Click the button to calculate y.</p>
+
+  <button onclick="calculateY()">Calculate</button>
+
+  <script>
+    function calculateY() {
+      let x = 15;
+      let y = x + 1;
+      document.getElementById("result").innerHTML = "The value of y is: " + y;
+    }
+  </script>
+</body>
+</html>

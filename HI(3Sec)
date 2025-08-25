@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alert After 3 Seconds</title>
+</head>
+<body>
+  <h2>Click the Button to Wait 3 Seconds Then Alert “HI”</h2>
+
+  <button onclick="waitAndAlert()">Click Me</button>
+
+  <script>
+    function waitAndAlert() {
+      setTimeout(function() {
+        alert("HI");
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
