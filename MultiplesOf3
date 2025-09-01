@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiples of 3</title>
+</head>
+<body>
+
+  <h1>Multiples of 3 (excluding 9)</h1>
+  <ul id="resultList"></ul>
+
+  <script>
+    let numbers = [];
+    for (let i = 0; i < 10; i++) {
+      let input = prompt("Enter number " + (i + 1) + ":");
+      let num = parseInt(input);
+      numbers.push(num);
+    }
+    for (let i = 0; i < numbers.length; i++) {
+      let num = numbers[i];
+
+      if (num === 9) {
+        continue;
+      }
+
+      if (num % 3 === 0) {
+        let li = document.createElement("li");
+        li.innerText = num;
+        document.getElementById("resultList").appendChild(li);
+      }
+    }
+  </script>
+
+</body>
+</html>

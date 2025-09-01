@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Validation</title>
+</head>
+<body>
+
+  <h2>Enter a number between 15 and 20:</h2>
+  <input type="number" id="numberInput">
+  <button onclick="validate()">Check</button>
+
+  <div id="resultMessage"></div>
+
+  <script>
+    function validate() {
+      let num = parseInt(document.getElementById("numberInput").value);
+
+      if (num >= 15 && num <= 20) {
+        document.getElementById("resultMessage").innerText = "Valid Input";
+      } else {
+        document.getElementById("resultMessage").innerText = "Invalid Input! Enter a number between 15 and 20.";
+      }
+    }
+  </script>
+
+</body>
+</html>

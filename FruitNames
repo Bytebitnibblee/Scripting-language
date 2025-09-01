@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fruits List</title>
+</head>
+<body>
+
+  <h2>Fruit List</h2>
+  <ul id="fruitList"></ul> 
+
+  <script>
+  
+    let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+
+    fruits.forEach(function(fruit) {
+      let li = document.createElement("li"); 
+      li.innerText = fruit; 
+      document.getElementById("fruitList").appendChild(li); 
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Passing Students Counter</title>
+</head>
+<body>
+
+  <h2>Passing Students</h2>
+  <h3 id="passCount"></h3> 
+  <script>
+    let marks = [];
+    let passingCount = 0; 
+
+
+    for (let i = 0; i < 7; i++) {
+      let input = prompt("Enter marks for student " + (i + 1) + ":");
+      let score = parseInt(input);
+      marks.push(score);
+
+     
+      if (score >= 40) {
+        passingCount++;
+      }
+    }
+    
+    document.getElementById("passCount").innerText = "Number of passing students: " + passingCount;
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Login</title>
+</head>
+<body>
+
+  <h1 id="loginMessage"></h1> 
+
+  <script>
+    let usernames = [];
+    for (let i = 0; i < 5; i++) {
+      let name = prompt("Enter username " + (i + 1) + ":");
+      usernames.push(name);
+    }
+    let loginName = prompt("Enter your login name:");
+    if (usernames.includes(loginName)) {
+      document.getElementById("loginMessage").innerText = "Welcome, " + loginName;
+    } else {
+      document.getElementById("loginMessage").innerText = "Access Denied";
+    }
+  </script>
+
+</body>
+</html>

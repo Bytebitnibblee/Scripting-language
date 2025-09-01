@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirm Box</title>
+</head>
+<body>
+
+  <button onclick="showConfirm()">Click Me</button>
+  <h3 id="confirmResult"></h3>
+
+  <script>
+    function showConfirm() {
+      let answer = confirm("Do you want to continue?");
+      
+      if (answer) {
+        document.getElementById("confirmResult").innerText = "You pressed OK";
+      } else {
+        document.getElementById("confirmResult").innerText = "You pressed Cancel";
+      }
+    }
+  </script>
+
+</body>
+</html>
