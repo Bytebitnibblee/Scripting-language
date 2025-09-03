@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Nested pyramids</title>
+</head>
+<body>
+
+  <h2>Nested Pyramids</h2>
+   
+  <script>
+// function rightPyramid(rows = 5) { // right pyramid
+//   for (let i = 1; i <= rows; i++) {
+//     let line = "";
+//     for (let j = 1; j <= i; j++) line += "* ";
+//     console.log(line);
+//   }
+// }
+// rightPyramid(5);
+
+// function centeredPyramid(rows = 5) {   //centered pyramid
+//   for (let i = 1; i <= rows; i++) {
+//     let spaces = " ".repeat(rows - i);
+//     let stars  = "* ".repeat(i);
+//     console.log(spaces + stars);
+//   }
+// }
+// centeredPyramid(5);
+
+function diamond(rows = 5) {
+  for (let i = 1; i <= rows; i++) {
+    console.log(" ".repeat(rows - i) + "* ".repeat(i));
+  }
+  for (let i = rows - 1; i >= 1; i--) {
+    console.log(" ".repeat(rows - i) + "* ".repeat(i));
+  }
+}
+diamond(5);
+
+
+
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert('Form submitted!')">Show Alert</button>
+    <button onclick="confirmHandler()">Show Confirm</button>
+    <button onclick="promptHandler()">Show Prompt</button>
+    <script>
+        function confirmHandler(){
+            const ok=confirm("Delete file?");
+            alert(ok?"Deleted.":"Canceled.");
+        }
+
+        function promptHandler(){
+            const name=prompt("Your name?");
+            alert(name===null?"User canceled.":"Hello, "+name);
+        }
+    </script>
+</body>
+</html>

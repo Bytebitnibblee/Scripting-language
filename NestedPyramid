@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Nested pyramids</title>
+</head>
+<body>
+
+  <h2>Nested Pyramids</h2>
+ function nestedPyramid(){
+    for(let i=0; i<5; i++){
+        
+    }
+ }
+ 
+
+
+
+  <script>
+
+  </script>
+
+</body>
+</html>
